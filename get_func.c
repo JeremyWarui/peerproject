@@ -12,17 +12,18 @@ int (*get_func(char s))(va_list)
 		{"s", print_s},
 		{"c", print_c},
 		{"d", print_int},
-		{"i", print_i}
+		{"i", print_i},
+		{"b", print_binary},
+		{"o", print_octal},
+		{"u", print_unint}
 	};
-
 	int i;
-	
+
 	for (i = 0; funcs[i].symbol != NULL; i++)
 	{
 		if (*funcs[i].symbol == s)
 			return (funcs[i].func);
 
 	}
-	
 	return (NULL);
 }

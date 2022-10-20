@@ -1,9 +1,9 @@
 #include "headerfile.h"
 
 /**
- * print_binary - prints binary format
- * @arg: the arguments
- * Return: no of arguments
+ * print_binary - prints base of 2
+ * @arg: argument list
+ * Return: number of binaries
  */
 
 int print_binary(va_list arg)
