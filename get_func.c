@@ -15,7 +15,9 @@ int (*get_func(char s))(va_list)
 		{"i", print_i},
 		{"b", print_binary},
 		{"o", print_octal},
-		{"u", print_unint}
+		{"u", print_unint},
+		{"X", print_hex},
+		{"x", print_hexlow}
 	};
 	int i;
 

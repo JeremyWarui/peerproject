@@ -30,5 +30,11 @@ int print_c(va_list arg);
 int print_s(va_list arg);
 int print_int(va_list arg);
 int print_i(va_list arg);
+int print_binary(va_list arg);
+int print_octal(va_list arg);
+int print_unint(va_list arg);
+int print_hex(va_list arg);
+int print_hexlow(va_list arg);
+
 
 #endif
