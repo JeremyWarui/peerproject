@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 		{
 			if (format[i] == '%')
 			{
-				if (format[i + 1] == '%')
+				if (format[i + 1] == '%' || format[i + 1] == ' ')
 				{
 					len += _putchar(format[i]);
 					i++;
@@ -33,8 +33,12 @@ int _printf(const char *format, ...)
 					if (func)
 						len += func(arg);
 					else
-						len += (_putchar(format[i] + _putchar(format[i + 1])));
-					i++;
+					{
+						_putchar(format[i]);
+					       	_putchar(format[i + 1]);
+						len += 2;
+					}
+					i += 1;
 				}
 			}
 			else
